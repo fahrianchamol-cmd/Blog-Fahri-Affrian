@@ -1,0 +1,437 @@
+:root {
+    --primary: #5c5b5b;
+    --bg: #010101;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+}
+
+/* Navbar */
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 3px solid var(--primary);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.Navbar .Navbar-Logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+
+}
+
+.Navbar .Navbar-Logo span {
+    color: var(--primary);
+}
+
+.Navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 0 1rem;
+}
+
+.Navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+
+.Navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.3rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.1s linear;
+}
+
+.Navbar .navbar-nav a:hover::after {
+    transform: scaleX(1.5);
+}
+
+.Navbar .navbar-extra a {
+    color: #fff;
+    margin: 0 0.5rem;
+}
+
+.Navbar .navbar-extra a:hover {
+    color: var(--primary);
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+.hero-profile {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    align-items: center;
+    padding: 80px 32px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.halaman-kedua .hero-profile {
+    display: none;
+}
+
+/* Gambar dengan Border Oval */
+.oval-photo {
+    width: 160px;
+    height: 210px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+/* Bagian Teks Nama di Sebelah Foto */
+.profile-info {
+    max-width: 450px;
+}
+
+.my-name {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    color: #ffffff;
+}
+
+
+
+.my-bio {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #aaaaaa;
+    margin: 0;
+}
+
+body {
+    background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    padding: 40px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+}
+
+.label {
+    font-size: 11px;
+    color: #888888;
+    letter-spacing: 1px;
+    margin: 0 0 12px 0;
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    background-color: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn-social i {
+    font-size: 18px;
+}
+
+.btn-ig:hover {
+    background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 55%, #fcb045 85%, #ffffff 100%);
+    border-color: #ffccd5;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(253, 29, 29, 0.4);
+}
+
+.btn-yt:hover {
+    background: linear-gradient(90deg, #cc0000 0%, #ff0000 78%, #ffcccc 96%, #ffffff 100%);
+    border-color: #ff9999;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.45);
+}
+
+
+
+.grid-enam-kotak {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px
+}
+
+
+@media (max-width: 900px) {
+    .grid-enam-kotak {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .grid-enam-kotak {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.konten-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid #383838;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #1c1c1c;
+    margin: 0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.konten-box-wrapper:hover {
+    transform: translateY(-3px);
+    border-color: #666666;
+}
+
+.konten-tanggal {
+    background-color: #2b2b2b;
+    color: #b0b0b0;
+    font-size: 11.5px;
+    padding: 6px 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #383838;
+}
+
+.konten-gambar {
+    width: 100%;
+    height: 150px;
+    background-color: #141414;
+    border-bottom: 1px solid #333333;
+}
+
+.konten-gambar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.konten-isi {
+    padding: 14px;
+    color: #b5b5b5;
+    line-height: 1.5;
+    font-size: 13.5px;
+    flex-grow: 1;
+}
+
+.konten-isi h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #f0f0f0;
+}
+
+.konten-isi p {
+    margin-bottom: 8px;
+}
+
+.konten-isi p:last-child {
+    margin-bottom: 0;
+}
+
+.konten-bawah {
+    background-color: #252525;
+    color: #9e9e9e;
+    font-size: 12px;
+    padding: 8px 14px;
+    border-top: 1px solid #383838;
+    font-style: italic;
+}
+
+.konten-gambar {
+    width: 100%;
+    height: 150px;
+    background-color: #141414;
+    border-top: 2px solid #facc15;
+    border-bottom: 2px solid #facc15;
+    box-shadow: 0 0 15px rgba(250, 204, 21, 0.45), inset 0 0 10px rgba(250, 204, 21, 0.25);
+    position: relative;
+    z-index: 1;
+}
+
+.konten-gambar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.konten-gambar {
+    width: 100%;
+    height: 150px;
+    background-color: #141414;
+    border-bottom: 1px solid #333333;
+    position: relative;
+    z-index: 1;
+}
+
+.konten-isi h2 a {
+    text-decoration: none;
+    color: #f0f0f0;
+    transition: color 0.2s ease;
+}
+
+.konten-isi h2 a:hover {
+    color: #facc15;
+    text-decoration: underline;
+}
+
+.template-artikel {
+    max-width: 800px;
+    margin: 85px auto 40px auto;
+    padding: 0 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #cccccc;
+}
+
+.banner-atas {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #383838;
+    margin-bottom: 24px;
+}
+
+.banner-atas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.info-tanggal {
+    font-size: 13px;
+    color: #888888;
+    margin-bottom: 8px;
+}
+
+.isi-artikel h1 {
+    margin: 0 0 20px 0;
+    font-size: 28px;
+    color: #f5f5f5;
+    line-height: 1.3;
+}
+
+.isi-artikel p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 0 18px 0;
+    color: #cccccc;
+}
+
+@media (max-width: 600px) {
+    .banner-atas {
+        height: 200px;
+    }
+
+    .isi-artikel h1 {
+        font-size: 22px;
+    }
+}
+
+
+/* media quee-emm apaya lupa*/
+
+
+/*laptop*/
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+
+/*tablet*/
+@media (max-width: 768px) {
+    html {
+        font-size: 65.5%;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    .Navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #fff;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.2s;
+    }
+
+    .Navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .Navbar .navbar-nav a {
+        color: var(--bg);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .Navbar .navbar-nav a::after {
+        transform-origin: 0 0;
+    }
+
+    .Navbar .navbar-nav a:hover::after {
+        transform: scaleX(0.2);
+    }
+}
+
+/*hape*/
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
